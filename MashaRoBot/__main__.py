@@ -74,51 +74,45 @@ def get_readable_time(seconds: int) -> str:
 
 
 
-PM_START_TEXT = """Hello, My name is ༒ 𝙏𝙄𝘼𝙉𝘼 ༒
+PM_START_TEXT = """Hello, My name is Parvathy
 
 Hey , I am a Group Manager,
 Made specially for Managing Groups.
 
-This Pro bot was made by [ℙℝ𝕀ℕℂ𝔼](https://t.me/prince_3011)
+This Pro bot was made by [LEGEND](https://t.me/FlyingKILI)
 Click /help or use button below to find out more about how to use me to my full potential."""
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="➕️ ADD ༒ 𝙏𝙄𝘼𝙉𝘼 ༒ TO YOUR GROUP ➕️", url="t.me/Tiana_Prince_bot?startgroup=true"),
+            text="ADD ME TO YOUR GROUP", url="t.me/MIDUKKI_ROBOT?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="📱ABOUT", callback_data="masha_"),
-        InlineKeyboardButton(text="⚜️HELP", callback_data="help_back"),
+        InlineKeyboardButton(text="ABOUT", callback_data="masha_"),
+        InlineKeyboardButton(text="HELP", callback_data="help_back"),
     ],
    [
         InlineKeyboardButton(
-            text="🎵 MUSIC GROUP 🎧", url="http://t.me/MUSIC_AND_CHATS")
+            text="OWNER", url="http://t.me/flyingKILI")
    ],
    [
         InlineKeyboardButton(
-            text="✨MY BF✨", url="http://t.me/prince_3011"),
+            text="SOURCE", url="http://t.me/Uvvauvve"),
         InlineKeyboardButton(
-            text="⚜️CHANNEL⚜️", url="https://t.me/PRINCEBOTS"),
+            text="CHANNEL", url="https://t.me/FlyingKILI"),
     ],
     [  
-        InlineKeyboardButton(text="👥SUPPORT GROUP👥", url="https://t.me/PRINCEBOTSUPPORT"),
+        InlineKeyboardButton(text="SUPPORT GROUP", url="https://t.me/marvelmoviesearth616"),
     ], 
     
 ]
 
 HELP_STRINGS = """
-༒ 𝙏𝙄𝘼𝙉𝘼 ༒ WITH NEW FEATURES
-
-꧁*CHECK ALL BUTTON BELOW TO EXPLORE EVERY COMMANDS OF TIANA*꧂
-
-𖣘 *All commands can either be used with* `/` *or* `!`.
-
-𖣘 *If you facing any issue or find any bugs in any command then you can report it in @PRINCEBOTSUPPORT*
+『HELP BUTTONS HERE』
 """
 
 
-DONATE_STRING ="""CONTACT ME ON @PRINCE_3011"""
+DONATE_STRING ="""CONTACT ME ON @FlyingKILI"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -203,7 +197,7 @@ def start(update: Update, context: CallbackContext):
                     update.effective_chat.id,
                     HELPABLE[mod].__help__,
                     InlineKeyboardMarkup(
-                        [[InlineKeyboardButton(text="⬅️ BACK", callback_data="help_back")]]
+                        [[InlineKeyboardButton(text="BACK", callback_data="help_back")]]
                     ),
                 )
 
@@ -363,7 +357,7 @@ def Masha_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "masha_":
         query.message.edit_text(
-            text=""" ℹ️ I'm *TIANA*, a powerful group management bot built to help you manage your group easily.
+            text=""" ℹ️ I'm *Parvathy*, a powerful group management bot built to help you manage your group easily.
                  ❍ I can restrict users.
                  ❍ I can greet users with customizable welcome messages and even set a group's rules.
                  ❍ I have an advanced anti-flood system.
@@ -371,8 +365,8 @@ def Masha_about_callback(update: Update, context: CallbackContext):
                  ❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
                  ❍ I check for admins' permissions before executing any command and more stuffs
                  \n_Masha's licensed under the GNU General Public License v3.0_
-                 Here is the [💾Repository](https://github.com/prince301102/tiana-2.0).
-                 If you have any question about masha, let us know at @princebotsupport.""",
+                 Here is the [💾Repository](https://t.me/uvvauvve).
+                 If you have any question about me, let us know at @FlyingKILI.""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -399,7 +393,7 @@ def Source_about_callback(update: Update, context: CallbackContext):
     if query.data == "source_":
         query.message.edit_text(
             text=""" Hi..🤗 I'm *TIANA BOT*
-                 \nHere is the [Source Code](https://GitHub.com/prince301102/tiana-2.0) .""",
+                 \nHere is the [Source Code](https://t.me/uvvauvve) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=False,
             reply_markup=InlineKeyboardMarkup(
